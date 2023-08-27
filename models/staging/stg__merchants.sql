@@ -13,7 +13,6 @@ select
   is_portal_active,
   provider_id,
   merchant_updated_at,
-  merchant_currency,
   benchmark_vertical,
   msm_market_segment,
 
