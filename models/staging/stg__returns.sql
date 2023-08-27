@@ -2,7 +2,7 @@ with source_data as (
 select
    *
 
-from {{ ref('orders') }}
+from {{ ref('returns') }}
 )
 
 select
