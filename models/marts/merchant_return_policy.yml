@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: merchant_return_policy.yml
+    description: "Data for exploring order and return info based on merchant return policies"
+    columns:
+      - name: model_key
+        description: "This is the PK - it concatinates O/R and the order_id/return_id"
+        tests:
+          - unique
+          - not_null
+
+      - name: return_or_order
+        description: "Use this field to bring return data or order data"
+      - name: order_id
+        description: "order_id for the return/order"
+      - name: created_at
+        description: "datetime order/return was created"
+      - name: item_count
+        description: "item count for order/return"
+      - name: gross_merchandise_value_usd
+        description: "this is the value and only is populated for order data"
+      - name: current_status_gift_cards_enabled_ind
+        description: "this is the most recent gift_cards_enabled found for the merchant"
+      - name: current_status_instant_exchange_enabled_ind
+        description: "this is the most recent instant_exchange_enabled found for the merchant"
+      - name: current_status_refunds_enabled_ind
+        description: "this is the most recent refunds_enabled found for the merchant"
+      - name: current_status_persistent_credit_enabled_ind
+        description: "this is the most recent persistent_credit_enabled found for the merchant"
+      - name: current_status_keep_item_threshold
+        description: "this is the most recent keep_item_threshold found for the merchant"
+      - name: return_policy
+        description: "this is the most recent full return policy found for the merchant"

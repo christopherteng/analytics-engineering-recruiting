@@ -4,7 +4,7 @@ models:
   - name: stg__merchants.yml
     description: "Staging model for merchants.csv."
     columns:
-      - name: order_id
+      - name: shop_id
         description: ""
         tests:
           - unique

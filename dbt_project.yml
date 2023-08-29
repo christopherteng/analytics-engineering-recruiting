@@ -7,7 +7,7 @@ profile: "default"
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
-seed-paths: ["models/seeds"]
+seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
@@ -24,4 +24,3 @@ models:
       core:
         +materialized: table
     staging:
-
